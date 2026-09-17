@@ -3,7 +3,6 @@
   "readiness": {
     "ready": false,
     "missing": [
-      "physics",
       "assumptions",
       "model",
       "prediction",
@@ -15,8 +14,8 @@
     ]
   },
   "record": {
-    "id": "e468e0a5-cecb-4487-bc81-f123a8779f24",
-    "revision": "1",
+    "id": "41a80ac8-c9c5-4467-b8e3-faca4be056e7",
+    "revision": "157",
     "model": {
       "moduleId": "controls",
       "modelId": "week07-student-model",
@@ -43,7 +42,7 @@
       "physics": {
         "suppliedBy": "student",
         "locked": false,
-        "text": ""
+        "text": "The downward force at the back of the aircraft(aft CG) push the back of the plane down which make the plane nose up in the process."
       },
       "assumptions": {
         "suppliedBy": "student",
