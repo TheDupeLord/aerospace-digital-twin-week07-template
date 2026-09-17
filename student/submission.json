@@ -3,8 +3,6 @@
   "readiness": {
     "ready": false,
     "missing": [
-      "assumptions",
-      "model",
       "prediction",
       "verification",
       "claim",
@@ -15,7 +13,7 @@
   },
   "record": {
     "id": "41a80ac8-c9c5-4467-b8e3-faca4be056e7",
-    "revision": "157",
+    "revision": "500",
     "model": {
       "moduleId": "controls",
       "modelId": "week07-student-model",
@@ -47,7 +45,7 @@
       "assumptions": {
         "suppliedBy": "student",
         "locked": false,
-        "text": ""
+        "text": "Planar motion describes how an object moving and rotating and it could invalidate by moment , environmental factor"
       },
       "inputs": {
         "suppliedBy": "instructor",
@@ -57,7 +55,7 @@
       "model": {
         "suppliedBy": "student",
         "locked": false,
-        "text": ""
+        "text": "Demand=Iy*target*competing\nq(inf)=0.5*density*V^2\nCm(delta)=M(delta)/q(inf)*S*chord length\nM(delta)=Cm(delta)*q(inf)*S*chord length\nCl=L/q(inf)*S"
       },
       "prediction": {
         "suppliedBy": "student",

@@ -8,11 +8,11 @@ Answers and recorded model results from `submission.json`. This document does no
 
 - Record ID: 41a80ac8-c9c5-4467-b8e3-faca4be056e7
 
-- Record revision: 157
+- Record revision: 500
 
 - Model hash: fnv1a-adee3cf8
 
-- Readiness: Marked incomplete or not ready; missing: assumptions, model, prediction, verification, claim, reflection, aiUse, execution
+- Readiness: Marked incomplete or not ready; missing: prediction, verification, claim, reflection, aiUse, execution
 
 ## Supplied setup (instructor supplied)
 
@@ -42,13 +42,21 @@ The downward force at the back of the aircraft(aft CG) push the back of the plan
 **Prompt:** Explain one supplied assumption and what could invalidate it: planar motion, fixed reference, local linear effectiveness, no trim or damping.
 
 **Student response:**
-_Missing — no response supplied._
+```
+Planar motion describes how an object moving and rotating and it could invalidate by moment , environmental factor
+```
 
 ### model
 **Prompt:** Write your demand, dynamic-pressure, coefficient and moment equations. Identify which quantities are supplied and which are unknown.
 
 **Student response:**
-_Missing — no response supplied._
+```
+Demand=Iy*target*competing
+q(inf)=0.5*density*V^2
+Cm(delta)=M(delta)/q(inf)*S*chord length
+M(delta)=Cm(delta)*q(inf)*S*chord length
+Cl=L/q(inf)*S
+```
 
 ### prediction
 **Prompt:** Before running your own implementation, predict the sign of its elevator moment and the effect of halving airspeed. Explain the competing moment.
