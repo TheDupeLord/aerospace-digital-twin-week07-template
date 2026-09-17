@@ -8,11 +8,11 @@ Answers and recorded model results from `submission.json`. This document does no
 
 - Record ID: 41a80ac8-c9c5-4467-b8e3-faca4be056e7
 
-- Record revision: 500
+- Record revision: 672
 
-- Model hash: fnv1a-adee3cf8
+- Model hash: fnv1a-07941550
 
-- Readiness: Marked incomplete or not ready; missing: prediction, verification, claim, reflection, aiUse, execution
+- Readiness: Marked incomplete or not ready; missing: verification, claim, reflection, aiUse, execution
 
 ## Supplied setup (instructor supplied)
 
@@ -62,7 +62,9 @@ Cl=L/q(inf)*S
 **Prompt:** Before running your own implementation, predict the sign of its elevator moment and the effect of halving airspeed. Explain the competing moment.
 
 **Student response:**
-_Missing — no response supplied._
+```
+The sign of elevator moment should be negative and the effect of halving airspeed is the elevator should become less effective.
+```
 
 ### verification
 **Prompt:** Show one independent hand calculation with units. Compare it with your model, and explain a sign, unit, or limiting-case check.
@@ -110,8 +112,7 @@ The recorded model JSON/expression source follows exactly as supplied. It is not
     },
     {
       "id": "controls.effectiveness",
-      "expressions": [
-        {
+      "expressions": [0.5*density*V^2
           "name": "dynamicPressure",
           "expression": "",
           "unit": "Pa"

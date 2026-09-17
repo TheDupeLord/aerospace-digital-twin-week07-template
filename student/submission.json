@@ -3,7 +3,6 @@
   "readiness": {
     "ready": false,
     "missing": [
-      "prediction",
       "verification",
       "claim",
       "reflection",
@@ -13,14 +12,14 @@
   },
   "record": {
     "id": "41a80ac8-c9c5-4467-b8e3-faca4be056e7",
-    "revision": "500",
+    "revision": "672",
     "model": {
       "moduleId": "controls",
       "modelId": "week07-student-model",
       "version": "1.0.0"
     },
-    "modelText": "{\n  \"schemaVersion\": \"week07.student-model/v1\",\n  \"id\": \"week07-student-model\",\n  \"version\": \"1.0.0\",\n  \"slots\": [\n    {\n      \"id\": \"controls.demand\",\n      \"expressions\": [\n        {\n          \"name\": \"requiredMoment\",\n          \"expression\": \"\",\n          \"unit\": \"N*m\"\n        }\n      ]\n    },\n    {\n      \"id\": \"controls.effectiveness\",\n      \"expressions\": [\n        {\n          \"name\": \"dynamicPressure\",\n          \"expression\": \"\",\n          \"unit\": \"Pa\"\n        },\n        {\n          \"name\": \"deltaCm\",\n          \"expression\": \"\",\n          \"unit\": \"1\"\n        },\n        {\n          \"name\": \"deltaMoment\",\n          \"expression\": \"\",\n          \"unit\": \"N*m\"\n        }\n      ]\n    }\n  ]\n}",
-    "modelHash": "fnv1a-adee3cf8",
+    "modelText": "{\n  \"schemaVersion\": \"week07.student-model/v1\",\n  \"id\": \"week07-student-model\",\n  \"version\": \"1.0.0\",\n  \"slots\": [\n    {\n      \"id\": \"controls.demand\",\n      \"expressions\": [\n        {\n          \"name\": \"requiredMoment\",\n          \"expression\": \"\",\n          \"unit\": \"N*m\"\n        }\n      ]\n    },\n    {\n      \"id\": \"controls.effectiveness\",\n      \"expressions\": [0.5*density*V^2\n          \"name\": \"dynamicPressure\",\n          \"expression\": \"\",\n          \"unit\": \"Pa\"\n        },\n        {\n          \"name\": \"deltaCm\",\n          \"expression\": \"\",\n          \"unit\": \"1\"\n        },\n        {\n          \"name\": \"deltaMoment\",\n          \"expression\": \"\",\n          \"unit\": \"N*m\"\n        }\n      ]\n    }\n  ]\n}",
+    "modelHash": "fnv1a-07941550",
     "fields": {
       "question": {
         "suppliedBy": "instructor",
@@ -60,7 +59,7 @@
       "prediction": {
         "suppliedBy": "student",
         "locked": false,
-        "text": ""
+        "text": "The sign of elevator moment should be negative and the effect of halving airspeed is the elevator should become less effective."
       },
       "execution": {
         "suppliedBy": "automatic",
@@ -96,33 +95,11 @@
     "slots": [
       {
         "id": "controls.demand",
-        "expressions": [
-          {
-            "name": "requiredMoment",
-            "expression": "",
-            "unit": "N*m"
-          }
-        ]
+        "expressions": []
       },
       {
         "id": "controls.effectiveness",
-        "expressions": [
-          {
-            "name": "dynamicPressure",
-            "expression": "",
-            "unit": "Pa"
-          },
-          {
-            "name": "deltaCm",
-            "expression": "",
-            "unit": "1"
-          },
-          {
-            "name": "deltaMoment",
-            "expression": "",
-            "unit": "N*m"
-          }
-        ]
+        "expressions": []
       }
     ]
   },
